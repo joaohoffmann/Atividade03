@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/style/user.css">
+  <script src="/js/scripts.js">
+  </script>
+  <title>Atividade 02</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <header id="header2">
+      <div class="header">
+        <div class="left-header">
+          <a href="index.html">
+            <img src="/img/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="search-box">
+          <input type="search" name="search-box" placeholder="Digite o nome do produto aqui.">
+          <img src="/img/seacrh-symbol.png" alt="lupa_para_busca">
+        </div>
+        <div class="cart">
+          <img src="/img/shopping-cart.png" alt="carrinho_de_compra">
+
+        </div>
+        <div class="user">
+          <a href="login.html">
+            <span id="userName">Login</span>
+          </a>
+        </div>
+    </header>
+    <main>
+      <div class="container-main">
+        <h1>Login de usuário </h1>
+        <div class="container-form">
+          <form action="" method="POST" id="formPrincipal">
+            <p><label for="txtLogin">Login:</label>
+              <input type="text" id="txtLogin" />
+            </p>
+            <p><label for="txtSenha">Senha:</label>
+              <input type="password" id="txtSenha" onblur="validaSenha();" />
+              <img src=" ./img/doubts-button.png" alt="dica" onmouseover="mostraDica();" onmouseout="escondeDica();"
+                id="imgIcone">
+              <span class="dica" id="dicaTexto">Senha precisa ter ao menos 6 caracteres</span>
+            </p>
+            <p><input type="button" name="btn-submit" id="btn-submit" onclick="recebeUsuario()" value="Gravar" />
+            </p>
+          </form>
+    </main>
+    <footer>
+      <div class=" footer-container">
+        <div class="footer-left">
+          <a href="index.html">
+            <img src="/img/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="footer-main">
+          <ul class="footer-main-list">
+            <li>
+              <a href="#header">Voltar ao topo</a>
+            </li>
+
+            <li>
+              <a href="#">Sobre nós</a>
+            </li>
+
+            <li>
+              <a href="#">Contato</a>
+            </li>
+
+            <li>
+              <a href="#categorias">Categorias</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
